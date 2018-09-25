@@ -1,0 +1,23 @@
+.main-container
+  height: 100%
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-template-rows: 1fr 1fr 1fr
+  grid-gap: 15px
+  grid-template-areas: "one one" "two three" "merch merch"
+  padding: 0 15px
+  @media (min-width: 1024px)
+    width: 1024px
+  div
+    width: 100%
+    height: 100%
+    background-color: #fff
+    min-height: 300px
+  .panel-one
+    grid-area: one
+  .panel-two
+    grid-area: two
+  .panel-three
+    grid-area: three
+  .panel-merch
+    grid-area: merch
