@@ -5,10 +5,8 @@ import {Link} from '../../_interfaces/link';
     selector: 'app-navigation',
     template: `
         <nav>
-            <div>
-                <h1>
-                    {{title}}
-                </h1>
+            <div class="brand">
+                {{title}}
             </div>
             <div class="list-links">
                 <ul>
@@ -17,7 +15,7 @@ import {Link} from '../../_interfaces/link';
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="social">
                 social media links
             </div>
         </nav>
