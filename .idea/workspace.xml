@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93ba555d-6b5f-41a1-ba53-b6714f4a1219" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/_interfaces/icons.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/_interfaces/panel.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_components/main/main.component.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/main/main.component.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/_components/main/main.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/main/main.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_components/navigation/navigation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/navigation/navigation.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/_interfaces/panel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_interfaces/panel.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +27,7 @@
           <entry key="html" value="1" />
           <entry key="json" value="1" />
           <entry key="sass" value="15" />
-          <entry key="ts" value="12" />
+          <entry key="ts" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -39,7 +36,7 @@
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Sass" value="15" />
-          <entry key="TypeScript" value="12" />
+          <entry key="TypeScript" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -50,29 +47,29 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="sass" value="487" />
-          <entry key="ts" value="884" />
-          <entry key="txt" value="49" />
+          <entry key="ts" value="1083" />
+          <entry key="txt" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="34" />
-          <entry key="PLAIN_TEXT" value="49" />
+          <entry key="HTML" value="40" />
+          <entry key="PLAIN_TEXT" value="64" />
           <entry key="Sass" value="487" />
-          <entry key="TypeScript" value="850" />
+          <entry key="TypeScript" value="1043" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.61107117">
+    <splitter split-orientation="horizontal" split-proportion="0.7641984">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/app/_components/main/main.component.ts">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="555">
-                  <caret line="37" column="55" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
+                <state relative-caret-position="508">
+                  <caret line="40" column="144" selection-start-line="40" selection-start-column="144" selection-end-line="40" selection-end-column="144" />
                   <folding>
                     <element signature="e#0#48#0" expanded="true" />
                   </folding>
@@ -88,6 +85,15 @@
                   <folding>
                     <element signature="e#0#48#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/app/_interfaces/panel.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" column="11" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="11" />
                 </state>
               </provider>
             </entry>
@@ -128,9 +134,9 @@
         <option value="$PROJECT_DIR$/src/app/_components/footer/footer.component.sass" />
         <option value="$PROJECT_DIR$/src/app/_components/footer/footer.component.ts" />
         <option value="$PROJECT_DIR$/src/app/_components/navigation/navigation.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/_components/main/main.component.sass" />
         <option value="$PROJECT_DIR$/src/app/_interfaces/panel.ts" />
         <option value="$PROJECT_DIR$/src/app/_components/main/main.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/_components/main/main.component.sass" />
       </list>
     </option>
   </component>
@@ -284,11 +290,25 @@
       <option name="project" value="LOCAL" />
       <updated>1538210250760</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finished layout">
+      <created>1538218073560</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1538218073560</updated>
+    </task>
+    <task id="LOCAL-00003" summary="finished layout">
+      <created>1538218791565</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1538218791565</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10356000" />
+    <option name="totallyTimeSpent" value="11179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1853" y="22" width="1652" height="1008" extended-state="0" />
@@ -324,7 +344,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="added gitignore" />
     <MESSAGE value="touched up page layout and installed fontawesome" />
-    <option name="LAST_COMMIT_MESSAGE" value="touched up page layout and installed fontawesome" />
+    <MESSAGE value="finished layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished layout" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/beigestation/src/app/_components/main/main.component.sass" />
@@ -396,13 +417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/_interfaces/panel.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/_components/navigation/navigation.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
@@ -413,20 +427,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/_components/main/main.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" column="55" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/_components/main/main.component.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/_interfaces/panel.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/_components/main/main.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="40" column="144" selection-start-line="40" selection-start-column="144" selection-end-line="40" selection-end-column="144" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
