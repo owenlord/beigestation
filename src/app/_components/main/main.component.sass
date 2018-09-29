@@ -8,16 +8,25 @@
   padding: 32px 32px
   //@media (min-width: 1280px)
   //  width: 1280px
+  .panel
+    display: grid
+    grid-template-areas: "left right"
+    grid-template-columns: 1fr 1fr
+    div
+      grid-area: left
+      display: flex
+      justify-content: center
+      align-items: center
   div
     width: 100%
     height: 100%
     background-color: #fff
     min-height: 600px
-  .panel-one
+  .one
     grid-area: one
-  .panel-two
+  .two
     grid-area: two
-  .panel-three
+  .three
     grid-area: three
-  .panel-merch
+  .merch
     grid-area: merch

@@ -29,18 +29,19 @@ import {Icons} from "../../_interfaces/icons";
 export class NavigationComponent implements OnInit {
     public title: string = 'beigestation';
     public links: Array<Link>;
+    public sociLinks: Array<Icons>;
     faYoutube = faYoutube;
     faInstagram = faInstagram;
-    public sociLinks: Array<Icons[]> = [
-        {url: '', icon: this.faYoutube},
-        {url: '', icon: this.faInstagram},
-    ]
 
     constructor() {
         this.title = this.title.toUpperCase();
     }
 
     ngOnInit() {
+        this.sociLinks = [
+            {url: '', icon: this.faYoutube},
+            {url: '', icon: this.faInstagram},
+        ];
         this.links = [
             {name: 'LIVE', url: '/live'},
             {name: 'SHOP', url: '/shop'},
