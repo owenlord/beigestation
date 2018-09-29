@@ -1,12 +1,14 @@
 import {Component, OnInit} from '@angular/core';
 import {Link} from '../../_interfaces/link';
+import {faYoutube, faInstagram} from '@fortawesome/free-brands-svg-icons';
+import {Icons} from "../../_interfaces/icons";
 
 @Component({
     selector: 'app-navigation',
     template: `
         <nav>
             <div class="brand">
-                {{title}}
+                <span>{{title}}</span>
             </div>
             <div class="list-links">
                 <ul>
@@ -16,7 +18,9 @@ import {Link} from '../../_interfaces/link';
                 </ul>
             </div>
             <div class="social">
-                social media links
+                <a *ngFor="let link of sociLinks" routerLink="">
+                    <fa-icon [icon]="link.icon"></fa-icon>
+                </a>
             </div>
         </nav>
     `,
@@ -25,6 +29,12 @@ import {Link} from '../../_interfaces/link';
 export class NavigationComponent implements OnInit {
     public title: string = 'beigestation';
     public links: Array<Link>;
+    faYoutube = faYoutube;
+    faInstagram = faInstagram;
+    public sociLinks: Array<Icons[]> = [
+        {url: '', icon: this.faYoutube},
+        {url: '', icon: this.faInstagram},
+    ]
 
     constructor() {
         this.title = this.title.toUpperCase();
