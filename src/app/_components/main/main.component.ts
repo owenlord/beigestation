@@ -18,8 +18,10 @@ import { faCaretRight, faBroadcastTower} from "@fortawesome/free-solid-svg-icons
                         </h1>
                         <p>{{panel.paragraph}}</p>
                         <span>
-                            <a href="">{{panel.linkName}}</a>
-                            <fa-icon [icon]="faCaretRight"></fa-icon>
+                            <a [routerLink]="['/live', panel.id]">
+                                {{panel.linkName}}
+                                <fa-icon [icon]="faCaretRight"></fa-icon>
+                            </a>
                         </span>
                     </span>
                 </div>
@@ -37,10 +39,10 @@ export class MainComponent implements OnInit {
 
     ngOnInit() {
         this.panels = [
-            {title: 'Hot Nugs', paragraph: 'Cum and watch some hot nugs dance', backgroundImg: 'url', linkName: 'WATCH NOW', url: 'url', liveNow: true, style: 'one'},
-            {title: 'Sexy Pasts', paragraph: 'These pasts will wow you', backgroundImg: 'url', linkName: 'WATCH NOW', url: 'url', liveNow: false, style: 'two'},
-            {title: 'Crispy Chris', paragraph: 'Chris is a genius', backgroundImg: 'url', linkName: 'WATCH NOW', url: 'url', liveNow: true, style: 'three'},
-            {title: 'Merch', paragraph: 'Get you merch!', backgroundImg: 'url', linkName: 'SHOP', url: 'url', style: 'merch'}
+            {id: 'nuggets', title: 'Hot Nugs', paragraph: 'Cum and watch some hot nugs dance', backgroundImg: 'url', linkName: 'WATCH NOW', url: 'url', liveNow: true, style: 'one'},
+            {id: 'pasties', title: 'Sexy Pasts', paragraph: 'These pasts will wow you', backgroundImg: 'url', linkName: 'WATCH NOW', url: 'url', liveNow: false, style: 'two'},
+            {id: 'crisps', title: 'Crispy Chris', paragraph: 'Chris is a genius', backgroundImg: 'url', linkName: 'WATCH NOW', url: 'url', liveNow: true, style: 'three'},
+            {id: 'merch', title: 'Merch', paragraph: 'Get you merch!', backgroundImg: 'url', linkName: 'SHOP', url: 'url', style: 'merch'}
         ]
     }
 }

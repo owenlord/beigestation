@@ -1,4 +1,5 @@
 export interface Panel {
+    id: string;
     title: string;
     paragraph: string;
     backgroundImg: string;

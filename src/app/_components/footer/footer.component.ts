@@ -22,7 +22,7 @@ export class FooterComponent implements OnInit {
     title: string = 'beigestation';
     faYoutube = faYoutube;
     faInstagram = faInstagram;
-    public sociLinks: Array<Icons[]> = [
+    public sociLinks: Array<Icons> = [
         {url: '', icon: this.faYoutube},
         {url: '', icon: this.faInstagram},
     ]
