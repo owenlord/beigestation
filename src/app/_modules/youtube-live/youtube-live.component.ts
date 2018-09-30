@@ -1,4 +1,5 @@
 import {AfterContentInit, Component, OnInit, Input, Output} from '@angular/core';
+import {defaultDimensions} from "./_services/youtube-api.service";
 
 @Component({
   selector: 'app-youtube-live',
@@ -11,8 +12,8 @@ import {AfterContentInit, Component, OnInit, Input, Output} from '@angular/core'
 })
 export class YoutubeLiveComponent implements OnInit, AfterContentInit {
   @Input() videoId = '';
-  @Input() height = 200;
-  @Input() width = 200;
+  @Input() height = defaultDimensions.height;
+  @Input() width = defaultDimensions.width;
 
   constructor() { }
 
