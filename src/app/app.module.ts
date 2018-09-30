@@ -8,7 +8,7 @@ import {FooterComponent} from './_components/footer/footer.component';
 import {MainComponent} from './_components/main/main.component';
 import {MediaComponent} from "./_components/media/media.component";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import {YoutubeLiveModule} from "./_modules/youtube-live/youtube-live.module";
+import {YoutubePlayerModule} from "./_modules/youtube-player/youtube-player.module";
 import {AppRoutingModule} from './_modules/app-routing/app-routing.module';
 
 @NgModule({
@@ -22,7 +22,7 @@ import {AppRoutingModule} from './_modules/app-routing/app-routing.module';
     imports: [
         BrowserModule,
         FontAwesomeModule,
-        YoutubeLiveModule,
+        YoutubePlayerModule,
         AppRoutingModule
     ],
     providers: [],

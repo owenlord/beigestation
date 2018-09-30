@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {YoutubeLiveComponent} from "./youtube-live.component";
+import {YoutubePlayerComponent} from "./youtube-player.component";
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [
-      YoutubeLiveComponent
+      YoutubePlayerComponent
   ],
     exports:[
-        YoutubeLiveComponent
+        YoutubePlayerComponent
     ]
 })
-export class YoutubeLiveModule { }
+export class YoutubePlayerModule { }

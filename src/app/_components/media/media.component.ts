@@ -4,11 +4,11 @@ import {Component, OnInit} from '@angular/core';
     selector: 'app-media',
     template: `
         <div class="media-container">
-            <app-youtube-live
+            <youtube-player
                     [videoId]="12345"
                     [height]="200"
                     [width]="200"
-            ></app-youtube-live>
+            ></youtube-player>
         </div>
     `,
     styleUrls: ['./media.component.sass']

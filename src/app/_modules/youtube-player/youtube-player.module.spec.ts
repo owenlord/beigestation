@@ -1,10 +1,10 @@
-import { YoutubeLiveModule } from './youtube-live.module';
+import { YoutubePlayerModule } from './youtube-player.module';
 
 describe('YoutubeLiveModule', () => {
-  let youtubeLiveModule: YoutubeLiveModule;
+  let youtubeLiveModule: YoutubePlayerModule;
 
   beforeEach(() => {
-    youtubeLiveModule = new YoutubeLiveModule();
+    youtubeLiveModule = new YoutubePlayerModule();
   });
 
   it('should create an instance', () => {
