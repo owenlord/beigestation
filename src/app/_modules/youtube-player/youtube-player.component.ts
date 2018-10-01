@@ -1,5 +1,6 @@
 import {AfterContentInit, Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 import {defaultDimensions} from "./_services/youtube-api.service";
+import {YoutubeApiService} from "./_services/youtube-api.service";
 
 @Component({
     selector: 'youtube-player',
@@ -19,10 +20,13 @@ export class YoutubePlayerComponent implements OnInit, AfterContentInit {
     // state change: send the YT event with its state
     @Output() change = new EventEmitter();
 
-    constructor() {
+    constructor(
+        private service: YoutubeApiService
+    ) {
     }
 
     ngOnInit() {
+        this.service.loadPlayer();
     }
 
     ngAfterContentInit() {

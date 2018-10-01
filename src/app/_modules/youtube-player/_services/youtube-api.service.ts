@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
-export function window() {
+export function wind() {
     return window;
 }
 
@@ -10,9 +10,25 @@ export const defaultDimensions = {
 };
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class YoutubeApiService {
 
-  constructor() { }
+    private apiLoaded = false;
+    private youtubeApiUrl: string = "https://www.youtube.com/iframe_api";
+
+    constructor() {
+    }
+
+    public loadPlayer() {
+        const document = wind().document;
+        if (!this.apiLoaded) {
+            this.apiLoaded = true;
+            const tag = document.createElement('script');
+            tag.type = 'text/javascript';
+            tag.src = this.youtubeApiUrl;
+            document.body.appendChild(tag);
+            console.log(document);
+        }
+    }
 }
