@@ -28,7 +28,6 @@ export class YoutubeApiService {
             tag.type = 'text/javascript';
             tag.src = this.youtubeApiUrl;
             document.body.appendChild(tag);
-            console.log(document);
         }
     }
 }
