@@ -53,8 +53,6 @@ export class YoutubePlayerComponent implements OnInit, AfterViewInit {
         };
     }
 
-
-
     // The API calls this function when the player's state changes.
     onPlayerStateChange(event) {
         console.log('onPlayerStateChange');
