@@ -8,12 +8,12 @@ import {Icons} from "../../_interfaces/icons";
     template: `
         <nav>
             <div class="brand">
-                <span>{{title}}</span>
+                <a routerLink="/">{{title}}</a>
             </div>
             <div class="list-links">
                 <ul>
                     <li *ngFor="let link of links">
-                        <a routerLink="">{{link.name}}</a>
+                        <a routerLink="/">{{link.name}}</a>
                     </li>
                 </ul>
             </div>

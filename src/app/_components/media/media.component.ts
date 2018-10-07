@@ -5,7 +5,7 @@ import {Component, OnInit} from '@angular/core';
     template: `
         <div class="media-container">
             <youtube-player
-                    [videoId]="12345"
+                    [videoId]=""
                     [height]="200"
                     [width]="200"
             ></youtube-player>

@@ -1,4 +1,4 @@
-import {Component, OnInit, Input, Output, EventEmitter, AfterViewInit} from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter, AfterViewInit, OnDestroy} from '@angular/core';
 import {defaultDimensions, wind} from "./_services/youtube-api.service";
 import {Subscription} from "rxjs";
 import {YoutubeApiService} from "./_services/youtube-api.service";
@@ -7,12 +7,11 @@ import {YoutubeApiService} from "./_services/youtube-api.service";
     selector: 'youtube-player',
     template: `
         <div id="youtube-player">
-            testing
         </div>
     `,
     styleUrls: ['./youtube-player.component.sass']
 })
-export class YoutubePlayerComponent implements OnInit, AfterViewInit {
+export class YoutubePlayerComponent implements OnInit, AfterViewInit, OnDestroy {
     @Input() videoId = '';
     @Input() height = defaultDimensions.height;
     @Input() width = defaultDimensions.width;
@@ -22,23 +21,12 @@ export class YoutubePlayerComponent implements OnInit, AfterViewInit {
     @Output() change = new EventEmitter();
 
     player;
-    public videoID:string = 'wmin5WkOuPw';
-    private apiLoaded = false;
+    public videoID: string = 'wmin5WkOuPw';
 
-    constructor(private service: YoutubeApiService) { }
-
-    ngAfterViewInit() {
-        const doc = (<any>window).document;
-        if (!this.apiLoaded) {
-            this.apiLoaded = true;
-            const tag = doc.createElement('script');
-            tag.type = 'text/javascript';
-            tag.src = 'https://www.youtube.com/iframe_api';
-            doc.body.appendChild(tag);
-        }
+    constructor(private service: YoutubeApiService) {
     }
 
-    ngOnInit() {
+    ngAfterViewInit() {
         (<any>window).onYouTubeIframeAPIReady = () => {
             this.player = new (<any>window).YT.Player('youtube-player', {
                 height: '390',
@@ -51,6 +39,15 @@ export class YoutubePlayerComponent implements OnInit, AfterViewInit {
                 playerVars: {'autoplay': 0, 'rel': 0, 'controls': 2},
             });
         };
+    }
+
+    ngOnInit() {
+        const doc = (<any>window).document;
+        const tag = doc.createElement('script');
+        tag.type = 'text/javascript';
+        tag.src = 'https://www.youtube.com/iframe_api';
+        doc.body.appendChild(tag);
+        console.log('made');
     }
 
     // The API calls this function when the player's state changes.
