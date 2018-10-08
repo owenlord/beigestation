@@ -11,7 +11,7 @@ import {YoutubeApiService} from "./_services/youtube-api.service";
     `,
     styleUrls: ['./youtube-player.component.sass']
 })
-export class YoutubePlayerComponent implements OnInit, AfterViewInit, OnDestroy {
+export class YoutubePlayerComponent implements OnInit, AfterViewInit {
     @Input() videoId = '';
     @Input() height = defaultDimensions.height;
     @Input() width = defaultDimensions.width;
