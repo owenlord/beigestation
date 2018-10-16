@@ -1,4 +1,4 @@
-export interface Panel {
+export interface Video {
     id: string;
     title: string;
     videoID: string;

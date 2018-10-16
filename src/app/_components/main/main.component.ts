@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {Panel} from "../../_interfaces/panel";
+import {Video} from "../../_interfaces/video";
+import {ServerConnectorService} from "../../_services/server-connector.service";
 import { faCaretRight, faBroadcastTower} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
@@ -31,18 +32,14 @@ import { faCaretRight, faBroadcastTower} from "@fortawesome/free-solid-svg-icons
     styleUrls: ['./main.component.sass']
 })
 export class MainComponent implements OnInit {
-    public panels: Array<Panel>;
+    public panels: Array<Video>;
     faCaretRight = faCaretRight;
     faBroadcastTower = faBroadcastTower;
-    constructor() {
+    constructor(private service: ServerConnectorService) {
+        this.service.getVideos()
+            .subscribe(v => this.panels = v)
     }
 
     ngOnInit() {
-        this.panels = [
-            {id: 'nuggets', videoID: 'wmin5WkOuPw', title: 'Hot Nugs', paragraph: 'Cum and watch some hot nugs dance', backgroundImg: 'url', linkName: 'WATCH NOW', url: 'url', liveNow: true, style: 'one'},
-            {id: 'pasties', videoID: 'wmin5WkOuPw', title: 'Sexy Pasts', paragraph: 'These pasts will wow you', backgroundImg: 'url', linkName: 'WATCH NOW', url: 'url', liveNow: false, style: 'two'},
-            {id: 'crisps', videoID: 'wmin5WkOuPw', title: 'Crispy Chris', paragraph: 'Chris is a genius', backgroundImg: 'url', linkName: 'WATCH NOW', url: 'url', liveNow: true, style: 'three'},
-            {id: 'merch', videoID: '', title: 'Merch', paragraph: 'Get you merch!', backgroundImg: 'url', linkName: 'SHOP', url: 'url', style: 'merch'}
-        ]
     }
 }
