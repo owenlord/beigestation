@@ -1,6 +1,8 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Video} from "../../_interfaces/video";
+import { ActivatedRoute, Router } from '@angular/router';
 import {ServerConnectorService} from "../../_services/server-connector.service";
+import {Subscription} from "rxjs";
 
 @Component({
     selector: 'app-media',
@@ -15,12 +17,22 @@ import {ServerConnectorService} from "../../_services/server-connector.service";
     `,
     styleUrls: ['./media.component.sass']
 })
-export class MediaComponent implements OnInit {
+export class MediaComponent implements OnInit, OnDestroy {
     videoIDs: Array<Video>;
+    sub: Subscription;
     player: YT.Player;
     private id: string = 'qDuKsiwS5xw';
-    constructor(private service: ServerConnectorService) {
+    constructor(private route: ActivatedRoute, private router: Router, private service: ServerConnectorService) {
         this.getVideos();
+    }
+    ngOnInit() {
+        this.sub = this.route
+            .data
+            .subscribe(v => console.log(v));
+    }
+
+    ngOnDestroy() {
+        this.sub.unsubscribe();
     }
     savePlayer(player) {
         this.player = player;
@@ -33,10 +45,6 @@ export class MediaComponent implements OnInit {
     getVideos(): void {
         this.service.getVideos()
             .subscribe(v => this.videoIDs = v);
-    }
-
-
-    ngOnInit() {
     }
 
 }
