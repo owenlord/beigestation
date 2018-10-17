@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Video} from "../../_interfaces/video";
 import {ServerConnectorService} from "../../_services/server-connector.service";
 import { faCaretRight, faBroadcastTower} from "@fortawesome/free-solid-svg-icons";
+import {Observable} from "rxjs";
 
 @Component({
     selector: 'app-main',
@@ -38,6 +39,15 @@ export class MainComponent implements OnInit {
     constructor(private service: ServerConnectorService) {
         this.service.getVideos()
             .subscribe(v => this.panels = v)
+
+        this.service.getPlanets()
+            .subscribe(d => {
+                console.log(d);
+            });
+        this.service.searchPlanets('Tatooine')
+            .subscribe(d => {
+                console.log(d);
+            })
     }
 
     ngOnInit() {

@@ -9,6 +9,7 @@ import {MainComponent} from './_components/main/main.component';
 import {MediaComponent} from "./_components/media/media.component";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { YoutubePlayerModule } from 'ngx-youtube-player';
+import { HttpClientModule } from '@angular/common/http';
 import {AppRoutingModule} from './_modules/app-routing/app-routing.module';
 
 @NgModule({
@@ -23,6 +24,7 @@ import {AppRoutingModule} from './_modules/app-routing/app-routing.module';
         BrowserModule,
         FontAwesomeModule,
         YoutubePlayerModule,
+        HttpClientModule,
         AppRoutingModule
     ],
     providers: [],
