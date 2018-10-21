@@ -8,16 +8,20 @@ import {Observable, of} from "rxjs";
     providedIn: 'root'
 })
 export class ServerConnectorService {
+    private youtubeURL = 'https://www.googleapis.com/youtube/v3/channelSections?part=id%2C+snippet%2C+contentDetails&channelId=UCiHlfB-Gnx02tf3dMxi8SsA&key=`
     private url: string = 'https://swapi.co/api/planets';
     private searchUrl: string = 'https://swapi.co/api/planets/?search=';
-    public test: Observable<any>;
 
-    getVideos(): Observable<Video[]> {
+    getVideosDetails(): Observable<Video[]> {
         return of(VIDEOS);
     }
 
     getPlanets() {
         return this.http.get(this.url);
+    }
+
+    getYoutubeData(){
+        return this.http.get(this.youtubeURL);
     }
 
     searchPlanets(name: string): Observable<HttpResponse<any>>{

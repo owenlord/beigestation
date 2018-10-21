@@ -37,7 +37,7 @@ export class MainComponent implements OnInit {
     faCaretRight = faCaretRight;
     faBroadcastTower = faBroadcastTower;
     constructor(private service: ServerConnectorService) {
-        this.service.getVideos()
+        this.service.getVideosDetails()
             .subscribe(v => this.panels = v)
 
         this.service.getPlanets()
