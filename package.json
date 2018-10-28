@@ -2,6 +2,7 @@
   "name": "beigestation",
   "version": "1.0.0",
   "scripts": {
+    "dev": "nodemon server.js",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
