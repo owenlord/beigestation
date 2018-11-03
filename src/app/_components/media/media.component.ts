@@ -21,15 +21,15 @@ export class MediaComponent implements OnInit, OnDestroy {
     videoIDs: Array<Video>;
     sub: Subscription;
     player: YT.Player;
-    private id: string = 'PLA0B498C1C5FB69F9';
+    private id: string;
     constructor(private route: ActivatedRoute, private router: Router, private service: ServerConnectorService) {
-        this.getVideos();
-        this.getYouTubeData();
+        // this.getVideos();
+        // this.getYouTubeData();
     }
     ngOnInit() {
         this.sub = this.route
             .data
-            .subscribe(v => console.log(v));
+            .subscribe(d => console.log(d));
     }
 
     ngOnDestroy() {

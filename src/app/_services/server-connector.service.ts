@@ -8,40 +8,23 @@ import {Observable, of} from "rxjs";
     providedIn: 'root'
 })
 export class ServerConnectorService {
-    private youtubeURL = 'https://www.googleapis.com/youtube/v3/channelSections?part=id%2C+snippet%2C+contentDetails&channelId=UCiHlfB-Gnx02tf3dMxi8SsA&key='
-    private url: string = 'https://swapi.co/api/planets';
-    private searchUrl: string = 'https://swapi.co/api/planets/?search=';
+    private youtubeURL = 'https://www.googleapis.com/youtube/v3/channelSections?part=id%2C+snippet%2C+contentDetails&channelId=UCiHlfB-Gnx02tf3dMxi8SsA&key=AIzaSyBI4FvdvY1AFMzKYbW7XFFAQNqB9Py2dWg';
 
     getVideosDetails(): Observable<Video[]> {
         return of(VIDEOS);
-    }
-
-    getPlanets() {
-        return this.http.get(this.url);
     }
 
     getYoutubeData(){
         return this.http.get(this.youtubeURL);
     }
 
-    test(){
-        return this.http.get('http://localhost:4000/api/hello');
-    }
-
-    searchPlanets(name: string): Observable<HttpResponse<any>>{
-        return this.http.get<any>(this.searchUrl + name, {observe: 'response'});
-    }
-
     constructor(private http: HttpClient) {
-        Observable.create((obs) => {
-            obs.next('val I passed')
-        }).subscribe({
-            next: function (v) {
-                console.log(v)
-            }
-        });
-        this.test().subscribe(e => {
-            console.log(e)
-        })
+        // Observable.create((obs) => {
+        //     obs.next('val I passed')
+        // }).subscribe({
+        //     next: function (v) {
+        //         console.log(v)
+        //     }
+        // });
     }
 }

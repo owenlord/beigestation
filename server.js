@@ -1,5 +1,3 @@
-//https://www.googleapis.com/youtube/v3/search?key={your key}&channelId=UCiHlfB-Gnx02tf3dMxi8SsA&part=snippet,id&order=date&maxResults=20
-
 const express = require('express'),
     path = require('path'),
     conf = require('./server/config'),

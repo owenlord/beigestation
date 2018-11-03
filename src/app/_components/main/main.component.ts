@@ -20,7 +20,7 @@ import {Observable} from "rxjs";
                         </h1>
                         <p>{{panel.paragraph}}</p>
                         <span>
-                            <a [routerLink]="['/live', panel.id]">
+                            <a [routerLink]="['/live', { id: panel.id, videoID: panel.videoId}]">
                                 {{panel.linkName}}
                                 <fa-icon [icon]="faCaretRight"></fa-icon>
                             </a>
@@ -39,15 +39,6 @@ export class MainComponent implements OnInit {
     constructor(private service: ServerConnectorService) {
         this.service.getVideosDetails()
             .subscribe(v => this.panels = v)
-
-        this.service.getPlanets()
-            .subscribe(d => {
-                console.log(d);
-            });
-        this.service.searchPlanets('Tatooine')
-            .subscribe(d => {
-                console.log(d);
-            })
     }
 
     ngOnInit() {
