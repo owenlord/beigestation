@@ -20,7 +20,7 @@ import {Observable} from "rxjs";
                         </h1>
                         <p>{{panel.paragraph}}</p>
                         <span>
-                            <a [routerLink]="['/live', { id: panel.id, videoID: panel.videoId}]">
+                            <a [routerLink]="['/live', panel.id]" [queryParams] = "{videoId: panel.videoID }">
                                 {{panel.linkName}}
                                 <fa-icon [icon]="faCaretRight"></fa-icon>
                             </a>
@@ -37,7 +37,7 @@ export class MainComponent implements OnInit {
     faCaretRight = faCaretRight;
     faBroadcastTower = faBroadcastTower;
     constructor(private service: ServerConnectorService) {
-        this.service.getVideosDetails()
+        this.service.getVideosDetails
             .subscribe(v => this.panels = v)
     }
 

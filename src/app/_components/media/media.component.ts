@@ -23,13 +23,13 @@ export class MediaComponent implements OnInit, OnDestroy {
     player: YT.Player;
     private id: string;
     constructor(private route: ActivatedRoute, private router: Router, private service: ServerConnectorService) {
-        // this.getVideos();
-        // this.getYouTubeData();
+        this.getVideos();
     }
     ngOnInit() {
+        console.log(this.route)
         this.sub = this.route
-            .data
-            .subscribe(d => console.log(d));
+            .queryParams
+            .subscribe(d => this.id = d.videoId);
     }
 
     ngOnDestroy() {
@@ -43,13 +43,8 @@ export class MediaComponent implements OnInit, OnDestroy {
         console.log('player state', event.data);
     }
 
-    getYouTubeData(): void{
-        this.service.getYoutubeData()
-            .subscribe(v => console.log(v))
-    }
-
     getVideos(): void {
-        this.service.getVideosDetails()
+        this.service.getVideosDetails
             .subscribe(v => this.videoIDs = v);
     }
 

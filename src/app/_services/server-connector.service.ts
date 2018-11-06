@@ -8,17 +8,27 @@ import {Observable, of} from "rxjs";
     providedIn: 'root'
 })
 export class ServerConnectorService {
-    private youtubeURL = 'https://www.googleapis.com/youtube/v3/channelSections?part=id%2C+snippet%2C+contentDetails&channelId=UCiHlfB-Gnx02tf3dMxi8SsA&key=AIzaSyBI4FvdvY1AFMzKYbW7XFFAQNqB9Py2dWg';
+    private _youtubeURL = 'http://localhost:4000/api/videos';
+    private _rawVideosData: any;
 
-    getVideosDetails(): Observable<Video[]> {
-        return of(VIDEOS);
+    get getVideosDetails(): Observable<Video[]> {
+        return this._rawVideosData;
+    }
+
+    set videosData(v: any) {
+        this._rawVideosData = v;
     }
 
     getYoutubeData(){
-        return this.http.get(this.youtubeURL);
+        return this.http.get(this._youtubeURL).subscribe(d => {
+            console.log(d);
+            this.videosData = d;
+        })
     }
 
     constructor(private http: HttpClient) {
+        console.log('test');
+        this.getYoutubeData();
         // Observable.create((obs) => {
         //     obs.next('val I passed')
         // }).subscribe({

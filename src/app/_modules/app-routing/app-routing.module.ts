@@ -11,8 +11,7 @@ const appRoutes: Routes = [
     },
     {
         path: 'live/:id',
-        component: MediaComponent,
-        data : {videoId : 'some value'}
+        component: MediaComponent
     }
 ];
 
