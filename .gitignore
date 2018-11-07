@@ -33,6 +33,7 @@ npm-debug.log
 yarn-error.log
 yarn.lock
 .env
+/server/config.js
 testem.log
 /typings
 

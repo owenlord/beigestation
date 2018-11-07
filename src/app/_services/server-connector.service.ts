@@ -11,7 +11,7 @@ export class ServerConnectorService {
     private _youtubeURL = 'http://localhost:4000/api/videos';
     private _rawVideosData: any;
 
-    get getVideosDetails(): Observable<Video[]> {
+    get getVideosDetails() {
         return this._rawVideosData;
     }
 

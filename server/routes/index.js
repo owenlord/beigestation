@@ -5,6 +5,7 @@ let express = require('express'),
     url = `https://www.googleapis.com/youtube/v3/search?key=${process.env.YOUTUBE_API_KEY}&${channelId}&part=snippet,id&order=date&maxResults=20`,
     cors = require('cors'),
     conf = require('../config'),
+    videoController = require('../controllers/ApiVideoController');
     request = require('request'),
     router = express.Router(),
     app = express();
@@ -26,19 +27,7 @@ router.route('/videos')
             }
             if(!error && response.statusCode == 200){
                 let parsed = JSON.parse(body);
-                parsed = parsed.items.map(item => {
-                    return {
-                        id: item.snippet.title,
-                        title: item.snippet.title,
-                        videoID: item.id.videoId,
-                        paragraph: item.snippet.description,
-                        backgroundImg: item.snippet.thumbnails.high,
-                        linkName: item.snippet.title,
-                        liveNow: false,
-                        url: '',
-                        style: ''
-                    }
-                });
+                parsed = videoController.videoDetailsResp(parsed);
                 res.send(parsed);
             }
         });

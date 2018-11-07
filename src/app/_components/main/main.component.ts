@@ -8,7 +8,7 @@ import {Observable} from "rxjs";
     selector: 'app-main',
     template: `
         <div class="main-container">
-            <div *ngFor="let panel of panels" class="panel" ngClass="{{panel.style}}">
+            <div *ngFor="let panel of panels" class="panel">
                 <div>
                     <span>
                         <span *ngIf="panel.hasOwnProperty('liveNow')" [ngStyle]="{'color': panel.liveNow ? 'red' : 'inherit' }">
@@ -21,7 +21,7 @@ import {Observable} from "rxjs";
                         <p>{{panel.paragraph}}</p>
                         <span>
                             <a [routerLink]="['/live', panel.id]" [queryParams] = "{videoId: panel.videoID }">
-                                {{panel.linkName}}
+                                WATCH NOW
                                 <fa-icon [icon]="faCaretRight"></fa-icon>
                             </a>
                         </span>
