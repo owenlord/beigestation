@@ -37,10 +37,12 @@ export class MainComponent implements OnInit {
     faCaretRight = faCaretRight;
     faBroadcastTower = faBroadcastTower;
     constructor(private service: ServerConnectorService) {
-        this.service.getVideosDetails
-            .subscribe(v => this.panels = v)
     }
 
     ngOnInit() {
+        this.service.getVideosDetails()
+            .subscribe(v => {
+                this.panels = v;
+            })
     }
 }

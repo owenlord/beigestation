@@ -3,7 +3,7 @@ export interface Video {
     title: string;
     videoID: string;
     paragraph: string;
-    backgroundImg: object;
+    backgroundImg?: object;
     linkName: string;
     liveNow?: boolean;
 }
