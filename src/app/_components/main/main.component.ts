@@ -8,7 +8,7 @@ import {Observable} from "rxjs";
     selector: 'app-main',
     template: `
         <div class="main-container">
-            <div *ngFor="let panel of panels" class="panel">
+            <div *ngFor="let panel of panels" class="panel" [style.backgroundImage]="'url(' + panel.backgroundImg.url + ')'">
                 <div>
                     <span>
                         <span *ngIf="panel.hasOwnProperty('liveNow')" [ngStyle]="{'color': panel.liveNow ? 'red' : 'inherit' }">
@@ -33,7 +33,7 @@ import {Observable} from "rxjs";
     styleUrls: ['./main.component.sass']
 })
 export class MainComponent implements OnInit {
-    public panels: Array<Video>;
+    public panels: Video[];
     faCaretRight = faCaretRight;
     faBroadcastTower = faBroadcastTower;
     constructor(private service: ServerConnectorService) {
@@ -42,6 +42,7 @@ export class MainComponent implements OnInit {
     ngOnInit() {
         this.service.getVideosDetails()
             .subscribe(v => {
+                console.log(v);
                 this.panels = v;
             })
     }
