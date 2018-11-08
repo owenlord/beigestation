@@ -13,6 +13,11 @@ believe in beige.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
+## REST service API server
+
+Run `npm dev` for a RESTful API server. Navigate to `http://localhost:4000/api`. When `ng build` the files will be served from the deve server.
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
