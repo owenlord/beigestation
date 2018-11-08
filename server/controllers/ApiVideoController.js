@@ -3,7 +3,7 @@ exports.videoDetailsResp = function (data) {
         return {
             id: item.snippet.title,
             title: item.snippet.title,
-            videoID: item.id.videoId,
+            videoId: item.id.videoId,
             paragraph: item.snippet.description,
             backgroundImg: item.snippet.thumbnails.high,
             linkName: item.snippet.title,

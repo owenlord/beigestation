@@ -9,11 +9,12 @@ import {Observable, of} from "rxjs";
 })
 export class ServerConnectorService {
     private _youtubeURL = 'http://localhost:4000/api/videos';
-
+    constructor(private http: HttpClient) {
+    }
     getVideosDetails(): Observable<Video[]>{
         return this.http.get<Video[]>(this._youtubeURL);
     }
-
-    constructor(private http: HttpClient) {
+    resolve(){
+        console.log('resolved video details')
     }
 }

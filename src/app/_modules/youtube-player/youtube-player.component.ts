@@ -21,7 +21,7 @@ export class YoutubePlayerComponent implements OnInit, AfterViewInit, OnDestroy 
     @Output() change = new EventEmitter();
 
     player;
-    public videoID: string = 'wmin5WkOuPw';
+    public videoId: string = 'wmin5WkOuPw';
 
     constructor(private service: YoutubeApiService) {
     }
@@ -68,7 +68,7 @@ export class YoutubePlayerComponent implements OnInit, AfterViewInit, OnDestroy 
     }
 
     getVideo() {
-        return this.videoID;
+        return this.videoId;
     }
 
     ngOnDestroy(){

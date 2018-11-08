@@ -20,7 +20,7 @@ import {Observable} from "rxjs";
                         </h1>
                         <p>{{panel.paragraph}}</p>
                         <span>
-                            <a [routerLink]="['/live', panel.id]" [queryParams] = "{videoId: panel.videoID }">
+                            <a [routerLink]="['/video', panel.videoId]" [queryParams] = "{videoId: panel.videoId }">
                                 WATCH NOW
                                 <fa-icon [icon]="faCaretRight"></fa-icon>
                             </a>
