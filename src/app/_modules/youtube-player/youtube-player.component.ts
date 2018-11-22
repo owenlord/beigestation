@@ -1,6 +1,16 @@
-import {Component, OnInit, Input, Output, EventEmitter, AfterViewInit, OnDestroy} from '@angular/core';
-import {defaultDimensions, wind} from "./_services/youtube-api.service";
-import {Subscription} from "rxjs";
+import {
+    Component,
+    OnInit,
+    Input,
+    Output,
+    EventEmitter,
+    AfterContentInit,
+    ElementRef,
+    OnChanges,
+    SimpleChanges,
+    OnDestroy, Renderer2
+} from '@angular/core';
+import {defaultDimensions} from "./_services/youtube-api.service";
 import {YoutubeApiService} from "./_services/youtube-api.service";
 
 @Component({
@@ -11,32 +21,36 @@ import {YoutubeApiService} from "./_services/youtube-api.service";
     `,
     styleUrls: ['./youtube-player.component.sass']
 })
-export class YoutubePlayerComponent implements OnInit, AfterViewInit, OnDestroy {
+export class YoutubePlayerComponent implements OnInit, OnDestroy, AfterContentInit {
     @Input() videoId = '';
     @Input() height = defaultDimensions.height;
     @Input() width = defaultDimensions.width;
+
+    @Input() protocol: any;
+    @Input() playerVars: any;
 
     @Output() ready = new EventEmitter();
     // state change: send the YT event with its state
     @Output() change = new EventEmitter();
 
     player;
-    public videoId: string = 'wmin5WkOuPw';
 
-    constructor(private service: YoutubeApiService) {
+    constructor(private service: YoutubeApiService, private renderer: Renderer2) {
     }
 
-    ngAfterViewInit() {
+    ngAfterContentInit() {
+        const playerSize = {height: this.height, width: this.width};
+        const container  = this.renderer.selectRootElement('#youtube-player');
         (<any>window).onYouTubeIframeAPIReady = () => {
             this.player = new (<any>window).YT.Player('youtube-player', {
-                height: '390',
-                width: '640',
+                height: this.height,
+                width: this.width,
                 videoId: this.getVideo(),
                 events: {
                     'onReady': this.onPlayerReady,
                     'onStateChange': this.onPlayerStateChange
                 },
-                playerVars: {'autoplay': 0, 'rel': 0, 'controls': 2},
+                playerVars: {'autoplay': 1, 'rel': 0, 'controls': 2},
             });
         };
     }
@@ -45,9 +59,9 @@ export class YoutubePlayerComponent implements OnInit, AfterViewInit, OnDestroy 
         const doc = (<any>window).document;
         const tag = doc.createElement('script');
         tag.type = 'text/javascript';
-        tag.src = 'https://www.youtube.com/iframe_api';
+        tag.src = 'http://www.youtube.com/iframe_api';
         doc.body.appendChild(tag);
-        console.log('made');
+        console.log(this.videoId);
     }
 
     // The API calls this function when the player's state changes.
@@ -58,8 +72,6 @@ export class YoutubePlayerComponent implements OnInit, AfterViewInit, OnDestroy 
 
     // The API will call this function when the video player is ready
     onPlayerReady(event) {
-        console.log(event);
-
         const videoId = this.getVideo();
         event.target.cueVideoById({
             'videoId': videoId
@@ -72,7 +84,9 @@ export class YoutubePlayerComponent implements OnInit, AfterViewInit, OnDestroy 
     }
 
     ngOnDestroy(){
-        // this.player = null;
+        console.log('destroyed');
+        this.player = null;
+        this.videoId = '';
     }
 
 }

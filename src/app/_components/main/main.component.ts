@@ -2,7 +2,6 @@ import {Component, OnInit} from '@angular/core';
 import {Video} from "../../_interfaces/video";
 import {ServerConnectorService} from "../../_services/server-connector.service";
 import { faCaretRight, faBroadcastTower} from "@fortawesome/free-solid-svg-icons";
-import {Observable} from "rxjs";
 
 @Component({
     selector: 'app-main',
@@ -42,7 +41,6 @@ export class MainComponent implements OnInit {
     ngOnInit() {
         this.service.getVideosDetails()
             .subscribe(v => {
-                console.log(v);
                 this.panels = v;
             })
     }

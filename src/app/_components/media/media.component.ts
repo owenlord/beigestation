@@ -10,18 +10,14 @@ import {Subscription} from "rxjs";
         <div class="media-container">
             <youtube-player
                     [videoId]="id"
-                    (ready)="savePlayer($event)"
-                    (change)="onStateChange($event)"
             ></youtube-player>
         </div>
     `,
     styleUrls: ['./media.component.sass']
 })
 export class MediaComponent implements OnInit, OnDestroy {
-    videoIDs: Array<Video>;
     sub: Subscription;
-    player: YT.Player;
-    private id: string;
+    public id: string;
     constructor(private route: ActivatedRoute, private router: Router, private service: ServerConnectorService) {
     }
     ngOnInit() {
@@ -33,13 +29,7 @@ export class MediaComponent implements OnInit, OnDestroy {
 
     ngOnDestroy() {
         this.sub.unsubscribe();
-    }
-    savePlayer(player) {
-        this.player = player;
-        console.log('player instance', player);
-    }
-    onStateChange(event) {
-        console.log('player state', event.data);
+        this.id = "";
     }
 
 }
