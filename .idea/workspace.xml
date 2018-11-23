@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93ba555d-6b5f-41a1-ba53-b6714f4a1219" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/_modules/youtube-player/_components/youtube-player.component.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/_modules/youtube-player/_components/youtube-player.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/_modules/youtube-player/_components/youtube-player.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_components/main/main.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/main/main.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_components/media/media.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_components/media/media.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/_modules/youtube-player/_services/youtube-api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_modules/youtube-player/_services/youtube-api.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.component.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.module.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +28,8 @@
           <entry key="js" value="16" />
           <entry key="json" value="16" />
           <entry key="md" value="1" />
-          <entry key="sass" value="21" />
-          <entry key="ts" value="87" />
+          <entry key="sass" value="22" />
+          <entry key="ts" value="92" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -36,8 +39,8 @@
           <entry key="JavaScript" value="16" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Sass" value="21" />
-          <entry key="TypeScript" value="87" />
+          <entry key="Sass" value="22" />
+          <entry key="TypeScript" value="92" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -50,7 +53,7 @@
           <entry key="project.closed" value="16" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
@@ -60,7 +63,7 @@
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -71,7 +74,7 @@
           <entry key="json" value="57" />
           <entry key="md" value="122" />
           <entry key="sass" value="130" />
-          <entry key="ts" value="3809" />
+          <entry key="ts" value="4126" />
           <entry key="txt" value="328" />
         </counts>
       </usages-collector>
@@ -83,74 +86,49 @@
           <entry key="Markdown" value="122" />
           <entry key="PLAIN_TEXT" value="378" />
           <entry key="Sass" value="130" />
-          <entry key="TypeScript" value="3766" />
+          <entry key="TypeScript" value="4083" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="Angular2LanguageService" value="18" />
+          <entry key="Angular2LanguageService" value="19" />
           <entry key="TypeScriptServerServiceImpl" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="43" column="55" lean-forward="true" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#205#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/_modules/youtube-player/_services/youtube-api.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/_components/media/media.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/_components/main/main.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="82" selection-start-line="3" selection-start-column="82" selection-end-line="3" selection-end-column="82" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.3842239">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/app/_modules/youtube-player/_services/youtube-api.service.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="314">
+                  <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/app/_modules/youtube-player/_components/youtube-player.component.ts">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="51">
+                  <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#0#197#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -179,10 +157,8 @@
         <option value="$PROJECT_DIR$/src/app/_modules/youtube-live/youtube-live.module.ts" />
         <option value="$PROJECT_DIR$/src/app/_modules/youtube-live/_services/youtube-api.service.ts" />
         <option value="$PROJECT_DIR$/src/app/_modules/youtube-live/youtube-live.component.ts" />
-        <option value="$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.module.ts" />
         <option value="$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.module.spec.ts" />
         <option value="$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.component.spec.ts" />
-        <option value="$PROJECT_DIR$/src/app/_modules/youtube-player/_services/youtube-api.service.ts" />
         <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.component.sass" />
         <option value="$PROJECT_DIR$/src/app/_components/media/media.component.sass" />
@@ -207,6 +183,9 @@
         <option value="$PROJECT_DIR$/src/app/_components/main/main.component.ts" />
         <option value="$PROJECT_DIR$/src/app/_components/media/media.component.ts" />
         <option value="$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.component.ts" />
+        <option value="$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.module.ts" />
+        <option value="$PROJECT_DIR$/src/app/_modules/youtube-player/_services/youtube-api.service.ts" />
+        <option value="$PROJECT_DIR$/src/app/_modules/youtube-player/_components/youtube-player.component.ts" />
       </list>
     </option>
   </component>
@@ -230,10 +209,10 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="1280" />
     <option name="y" value="22" />
-    <option name="width" value="1920" />
+    <option name="width" value="1684" />
     <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -242,6 +221,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -325,13 +305,21 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="_modules" type="462c0819:PsiDirectoryNode" />
               <item name="youtube-player" type="462c0819:PsiDirectoryNode" />
+              <item name="_components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="beigestation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="beigestation" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="youtube-player" type="462c0819:PsiDirectoryNode" />
               <item name="_services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -349,6 +337,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app/_modules/youtube-player/_components" />
       <recent name="$PROJECT_DIR$/" />
       <recent name="$PROJECT_DIR$/src/app/_modules/youtube-live" />
       <recent name="$PROJECT_DIR$/src/app/_modules" />
@@ -366,7 +355,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="npm.start">
     <configuration name="app.component.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/beigestation/src/app/app.component.html">
       <method v="2" />
     </configuration>
@@ -451,6 +440,7 @@
       <workItem from="1542230605040" duration="1888000" />
       <workItem from="1542662523492" duration="766000" />
       <workItem from="1542663880224" duration="2948000" />
+      <workItem from="1542910416963" duration="6284000" />
     </task>
     <task id="LOCAL-00001" summary="building out player services for youtube player">
       <created>1538319173772</created>
@@ -613,21 +603,28 @@
       <option name="project" value="LOCAL" />
       <updated>1541720197466</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="resolving video details for initial route">
+      <created>1542910464509</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1542910464509</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97394000" />
+    <option name="totallyTimeSpent" value="103678000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="36" y="22" width="1244" height="778" extended-state="6" />
+    <frame x="1280" y="22" width="1684" height="1058" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3311148" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2819732" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.51282054" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47507954" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934355" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -718,9 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.component.sass">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/_components/navigation/navigation.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -808,28 +802,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/ngx-youtube-player/src/modules/youtube-player.component.d.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/ngx-youtube-player/src/modules/ngx-youtube-player.module.d.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/ngx-youtube-player/src/ngx-youtube-player.d.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/ngx-youtube-player/ngx-youtube-player.d.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/ngx-youtube-player/esm2015/ngx-youtube-player.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/ngx-youtube-player/src/modules/youtube-player.component.d.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/ngx-youtube-player/src/modules/ngx-youtube-player.module.d.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/ngx-youtube-player/src/ngx-youtube-player.d.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/ngx-youtube-player/ngx-youtube-player.d.ts" />
+    <entry file="file://$PROJECT_DIR$/node_modules/ngx-youtube-player/esm2015/ngx-youtube-player.js" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -899,13 +876,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/ngx-youtube-player/ngx-youtube-player.metadata.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="425" selection-start-column="425" selection-end-column="425" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/ngx-youtube-player/ngx-youtube-player.metadata.json" />
     <entry file="file://$PROJECT_DIR$/node_modules/@types/youtube/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
@@ -913,7 +884,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.component.spec.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/_modules/youtube-player/_components/youtube-player.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
@@ -934,10 +905,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/src/app/_components/main/main.component.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        <state relative-caret-position="345">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -951,6 +922,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/_components/media/media.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -961,26 +939,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/_components/main/main.component.sass">
+    <entry file="file://$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        <state relative-caret-position="210">
+          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/_modules/youtube-player/_components/youtube-player.component.sass">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/_modules/youtube-player/_services/youtube-api.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="314">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.component.ts">
+    <entry file="file://$PROJECT_DIR$/src/app/_modules/youtube-player/_components/youtube-player.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="43" column="55" lean-forward="true" selection-start-line="43" selection-start-column="55" selection-end-line="43" selection-end-column="55" />
+        <state relative-caret-position="51">
+          <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
           <folding>
-            <element signature="e#0#205#0" expanded="true" />
+            <element signature="e#0#197#0" expanded="true" />
           </folding>
         </state>
       </provider>

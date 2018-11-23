@@ -15,18 +15,18 @@ export const defaultDimensions = {
 export class YoutubeApiService {
 
     private apiLoaded = false;
-    private youtubeApiUrl: string = "https://www.youtube.com/iframe_api";
+    private youtubeApiUrl: string = "://www.youtube.com/iframe_api";
 
     constructor() {
     }
 
-    public loadPlayer() {
+    public loadPlayer(options: {protocol: string}) {
         const document = wind().document;
         if (!this.apiLoaded) {
             this.apiLoaded = true;
             const tag = document.createElement('script');
             tag.type = 'text/javascript';
-            tag.src = this.youtubeApiUrl;
+            tag.src = `${options.protocol}${this.youtubeApiUrl}`;
             document.body.appendChild(tag);
         }
     }

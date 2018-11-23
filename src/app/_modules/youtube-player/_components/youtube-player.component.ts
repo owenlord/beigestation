@@ -10,8 +10,8 @@ import {
     SimpleChanges,
     OnDestroy, Renderer2
 } from '@angular/core';
-import {defaultDimensions} from "./_services/youtube-api.service";
-import {YoutubeApiService} from "./_services/youtube-api.service";
+import {defaultDimensions} from "../_services/youtube-api.service";
+import {YoutubeApiService} from "../_services/youtube-api.service";
 
 @Component({
     selector: 'youtube-player',
@@ -26,7 +26,7 @@ export class YoutubePlayerComponent implements OnInit, OnDestroy, AfterContentIn
     @Input() height = defaultDimensions.height;
     @Input() width = defaultDimensions.width;
 
-    @Input() protocol: any;
+    @Input() protocol: string = this.getProtocol();
     @Input() playerVars: any;
 
     @Output() ready = new EventEmitter();
@@ -39,8 +39,9 @@ export class YoutubePlayerComponent implements OnInit, OnDestroy, AfterContentIn
     }
 
     ngAfterContentInit() {
-        const playerSize = {height: this.height, width: this.width};
         const container  = this.renderer.selectRootElement('#youtube-player');
+        console.log(container);
+        this.service.loadPlayer({protocol: this.protocol})
         (<any>window).onYouTubeIframeAPIReady = () => {
             this.player = new (<any>window).YT.Player('youtube-player', {
                 height: this.height,
@@ -79,14 +80,22 @@ export class YoutubePlayerComponent implements OnInit, OnDestroy, AfterContentIn
         event.target.playVideo();
     }
 
+    getProtocol() {
+        const hasWindow = window && window.location;
+        const protocol = hasWindow
+            ? window.location.protocol.replace(':', '')
+            : 'http';
+        return protocol;
+    }
+
     getVideo() {
         return this.videoId;
     }
 
     ngOnDestroy(){
-        console.log('destroyed');
-        this.player = null;
+        this.player.destroy();
         this.videoId = '';
+        console.log('destroyed', this.player);
     }
 
 }
