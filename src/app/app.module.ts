@@ -6,12 +6,13 @@ import {AppComponent} from './app.component';
 import {NavigationComponent} from './_components/navigation/navigation.component';
 import {FooterComponent} from './_components/footer/footer.component';
 import {MainComponent} from './_components/main/main.component';
-import {MediaComponent} from "./_components/media/media.component";
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-// import {YoutubePlayerModule} from "ngx-youtube-player";
-import { YoutubePlayerModule } from "./_modules/youtube-player/youtube-player.module";
-import { HttpClientModule } from '@angular/common/http';
+import {VideoComponent} from "./_components/video/video.component";
+import {FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {YoutubePlayerModule } from "./_modules/youtube-player/youtube-player.module";
+import {HttpClientModule } from '@angular/common/http';
 import {AppRoutingModule} from './_modules/app-routing/app-routing.module';
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
     declarations: [
@@ -19,14 +20,17 @@ import {AppRoutingModule} from './_modules/app-routing/app-routing.module';
         NavigationComponent,
         FooterComponent,
         MainComponent,
-        MediaComponent
+        VideoComponent
     ],
     imports: [
         BrowserModule,
         FontAwesomeModule,
         YoutubePlayerModule,
         HttpClientModule,
-        AppRoutingModule
+        BrowserAnimationsModule,
+        MatButtonModule,
+        MatCheckboxModule,
+        AppRoutingModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93ba555d-6b5f-41a1-ba53-b6714f4a1219" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/_modules/youtube-player/_components/youtube-player.component.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/_modules/youtube-player/_components/youtube-player.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/_modules/youtube-player/_components/youtube-player.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/_modules/youtube-player/_components/youtube-player.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_modules/youtube-player/_components/youtube-player.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/_modules/youtube-player/_services/youtube-api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_modules/youtube-player/_services/youtube-api.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.component.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/_modules/youtube-player/youtube-player.module.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +43,7 @@
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
+          <entry key="project.closed" value="17" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="2" />
@@ -74,7 +67,7 @@
           <entry key="json" value="57" />
           <entry key="md" value="122" />
           <entry key="sass" value="130" />
-          <entry key="ts" value="4126" />
+          <entry key="ts" value="4216" />
           <entry key="txt" value="328" />
         </counts>
       </usages-collector>
@@ -86,7 +79,7 @@
           <entry key="Markdown" value="122" />
           <entry key="PLAIN_TEXT" value="378" />
           <entry key="Sass" value="130" />
-          <entry key="TypeScript" value="4083" />
+          <entry key="TypeScript" value="4173" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -98,37 +91,20 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3842239">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/app/_modules/youtube-player/_services/youtube-api.service.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="314">
-                  <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/app/_modules/youtube-player/_components/youtube-player.component.ts">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-                  <folding>
-                    <element signature="e#0#197#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/_modules/youtube-player/_components/youtube-player.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#197#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -209,11 +185,11 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1280" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="36" />
     <option name="y" value="22" />
-    <option name="width" value="1684" />
-    <option name="height" value="1058" />
+    <option name="width" value="1244" />
+    <option name="height" value="778" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -440,7 +416,7 @@
       <workItem from="1542230605040" duration="1888000" />
       <workItem from="1542662523492" duration="766000" />
       <workItem from="1542663880224" duration="2948000" />
-      <workItem from="1542910416963" duration="6284000" />
+      <workItem from="1542910416963" duration="8450000" />
     </task>
     <task id="LOCAL-00001" summary="building out player services for youtube player">
       <created>1538319173772</created>
@@ -610,21 +586,28 @@
       <option name="project" value="LOCAL" />
       <updated>1542910464509</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="resolving video details for initial route">
+      <created>1542986180792</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1542986180792</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103678000" />
+    <option name="totallyTimeSpent" value="105844000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="22" width="1684" height="1058" extended-state="0" />
+    <frame x="36" y="22" width="1244" height="778" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2819732" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2703827" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47507954" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5625943" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934355" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -954,15 +937,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/_modules/youtube-player/_services/youtube-api.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="131">
+          <caret line="16" selection-start-line="16" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/_modules/youtube-player/_components/youtube-player.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+        <state relative-caret-position="81">
+          <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
           <folding>
             <element signature="e#0#197#0" expanded="true" />
           </folding>

@@ -1,7 +1,7 @@
 //https://www.googleapis.com/youtube/v3/search?key={your key}&channelId=UCiHlfB-Gnx02tf3dMxi8SsA&part=snippet,id&order=date&maxResults=20
 require('dotenv').load();
 let express = require('express'),
-    channelId = 'channelId=UCiHlfB-Gnx02tf3dMxi8SsA',
+    channelId = 'channelId=UC2hl9xJ9ol2Yb6XDI2XwEyA',
     url = `https://www.googleapis.com/youtube/v3/search?key=${process.env.YOUTUBE_API_KEY}&${channelId}&part=snippet,id&order=date&maxResults=20`,
     cors = require('cors'),
     conf = require('../config'),

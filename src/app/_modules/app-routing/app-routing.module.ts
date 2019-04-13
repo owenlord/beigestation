@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {PreloadAllModules, RouterModule, Routes} from '@angular/router';
 import {MainComponent} from '../../_components/main/main.component';
-import {MediaComponent} from "../../_components/media/media.component";
+import {VideoComponent} from "../../_components/video/video.component";
 import {ServerConnectorService} from "../../_services/server-connector.service";
 
 const appRoutes: Routes = [
@@ -15,7 +15,7 @@ const appRoutes: Routes = [
     },
     {
         path: 'video/:videoId',
-        component: MediaComponent
+        component: VideoComponent
     }
 ];
 

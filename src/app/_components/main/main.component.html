@@ -1,0 +1,14 @@
+<div class="main-container">
+    <div *ngFor="let panel of (panels | async)" class="panel" [style.backgroundImage]="'url(' + panel.backgroundImg.url + ')'">
+        <div>
+            <span>
+                <h1>{{panel.title}}</h1>
+                <p>{{panel.paragraph}}</p>
+                <button mat-button (click)="navigate()" [routerLink]="['/video', panel.videoId]">
+                    WATCH NOW
+                    <fa-icon [icon]="faCaretRight"></fa-icon>
+                </button>
+            </span>
+        </div>
+    </div>
+</div>
